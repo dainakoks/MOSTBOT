@@ -1,12 +1,13 @@
-import { createBrowserRouter } from "react-router";
-import Layout from "./components/Layout";
-import HomePage from "./pages/HomePage";
-import ProductionsPage from "./pages/ProductionsPage";
-import ProductionDetailPage from "./pages/ProductionDetailPage";
-import AchievementsPage from "./pages/AchievementsPage";
-import SchedulePage from "./pages/SchedulePage";
+import { createHashRouter } from "react-router";
 
-export const router = createBrowserRouter([
+import Layout from "@/react-app/layout";
+import HomePage from "@/react-app/pages/Home";
+import ProductionsPage from "@/react-app/pages/Productions";
+import ProductionDetailPage from "@/react-app/pages/ProductionDetail";
+import AchievementsPage from "@/react-app/pages/Achievements";
+import SchedulePage from "@/react-app/pages/Schedule";
+
+export const router = createHashRouter([
   {
     path: "/",
     Component: Layout,
